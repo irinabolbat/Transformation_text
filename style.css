@@ -1,0 +1,79 @@
+body {
+    background: #e5e5e5;
+}
+
+.container {
+    width: 1200px;
+    height: 400px;
+    margin: 120px auto;
+    background: #e5e5e5;
+    border-radius: 120px;
+    box-shadow: inset -15px -15px 10px white, inset 15px 15px 10px grey;
+}
+
+#box1, #box2, #box3, #box4 {
+    text-align: center;
+    font-size: 10em;
+    margin: 90px 3px;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    text-shadow: 5px 5px 8px yellow;
+}
+
+#box1:hover {
+    animation: animate1 2s ease-in-out infinite;
+}
+
+#box2:hover {
+    animation: animate2 2s ease-in-out infinite;
+}
+
+#box3:hover {
+    animation: animate3 2s ease-in-out infinite;
+}
+
+#box4:hover {
+    animation: animate4 2s ease-in-out infinite;
+}
+
+#box1 {
+    margin-left: 180px;
+}
+
+@keyframes animate1 {
+    50% {
+        color: green;
+        font-size: 12em;
+        text-shadow: 30px 30px 35px green;
+    }
+}
+
+@keyframes animate2 {
+    50% {
+        color: green;
+        font-size: 12em;
+        text-shadow: 30px 30px 35px green;
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes animate3 {
+    75% {
+        color: green;
+        font-size: 12em;
+        text-shadow: 30px 30px 35px green;
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes animate4 {
+    100% {
+        color: green;
+        font-size: 12em;
+        text-shadow: 30px 30px 35px green;
+        transform: translate(160px,0px);
+    }
+}
